@@ -6,3 +6,4 @@ bin/
 .vscode/
 .idea/
 node_modules/
+.history/
