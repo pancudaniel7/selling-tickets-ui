@@ -1,16 +1,17 @@
-body
+@mixin body-common
+    color: white
     margin: auto 0
-    background: url(./assets/background1.jpg) no-repeat center center fixed
+    height: 100%
     -webkit-background-size: cover
     -moz-background-size: cover
     -o-background-size: cover
     background-size: cover
 
+body
+    background: url(./assets/background1.jpg) no-repeat center center fixed
+    @include body-common
+
 @media (max-width: 768px)
     body
-        // margin: auto 0
         background: url(./assets/background2.jpg) no-repeat center center fixed
-        -webkit-background-size: cover
-        -moz-background-size: cover
-        -o-background-size: cover
-        background-size: cover
+        @include body-common
