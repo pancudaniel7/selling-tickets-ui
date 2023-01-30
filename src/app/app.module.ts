@@ -6,14 +6,18 @@ import { AppComponent } from './app.component';
 import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { EventDescriptionComponent } from './components/event-description/event-description.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    EventDescriptionComponent
   ],
   imports: [
+    FlexLayoutModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule
