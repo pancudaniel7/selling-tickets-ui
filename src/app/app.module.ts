@@ -8,13 +8,15 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { EventDescriptionComponent } from './components/event-description/event-description.component';
+import { DateWidgetComponent } from './components/date-widget/date-widget.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundPageComponent,
     HomePageComponent,
-    EventDescriptionComponent
+    EventDescriptionComponent,
+    DateWidgetComponent
   ],
   imports: [
     FlexLayoutModule,
