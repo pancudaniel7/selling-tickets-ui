@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { EventDescriptionComponent } from './components/event-description/event-description.component';
 import { DateWidgetComponent } from './components/date-widget/date-widget.component';
@@ -16,15 +17,16 @@ import { DateWidgetComponent } from './components/date-widget/date-widget.compon
     NotFoundPageComponent,
     HomePageComponent,
     EventDescriptionComponent,
-    DateWidgetComponent
+    DateWidgetComponent,
   ],
   imports: [
     FlexLayoutModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,21 +1,46 @@
-<div fxLayout="column" fxLayoutGap="10px" fxFlexAlign="space-between">
-  <div fxFlex="200px"></div>
+<div
+  fxLayout="column"
+  fxLayoutGap="10px"
+  fxFlexAlign="space-between"
+  fxLayoutGap="30px"
+>
+  <div fxFlex="200px" fxFlex.xs="150px"></div>
   <div
     fxFlex="150px"
     fxLayout="row"
+    fxFlex.xs="0px"
+    fxLayout.xs="column"
     fxLayoutGap="10px"
     fxLayoutAlign="space-between"
   >
-    <div fxFlex="30">
+    <div fxFlex="30" fxFlexAlign.xs="center" fxLayoutAlign="end center">
       <app-date-widget
         dateDay="05"
         dateMonth="OCT"
         dateYear="2022"
       ></app-date-widget>
     </div>
-    <div fxFlex="70">
-      <h1># <span>Title</span> fo the event</h1>
+    <div fxFlex="70" fxFlexAlign.xs="center" fxLayoutAlign="start center">
+      <h1># <span class="title">Title</span> of the event.</h1>
     </div>
   </div>
-  <div fxFlex="500px">description</div>
+  <div fxLayout="row" fxLayoutGap="10px" fxFlexAlign="space-between">
+    <div fxFlex="15" fxFlex.sm="10" fxFlex.xs="10"></div>
+    <div class="description" fxFlex="70" fxFlex.sm="80" fxFlex.xs="80">
+      A systematic mapping study and survey of micro services A systematic
+      mapping study is proposed by in [4], which takes into consideration 21
+      studies in this field. Moreover, characterization framework is used for
+      their classification.
+    </div>
+    <div fxFlex="15" fxFlex.sm="10" fxFlex.xs="10"></div>
+  </div>
+  <div fxLayout="row">
+    <div fxFlex="15"></div>
+    <div fxFlex="70">
+      <button class="buy-ticket-button" mat-raised-button color="primary">
+        Buy Ticket
+      </button>
+    </div>
+    <div fxFlex="15"></div>
+  </div>
 </div>
